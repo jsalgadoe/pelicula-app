@@ -1,0 +1,16 @@
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"
+                *ngFor="let actor of cast">
+      <img [src]="$any(actor.profile_path) | poster" class="img-thumbnail">
+        <h3>{{actor.name}}</h3>
+    </div>
+
+    ...
+  </div>
+
+
+
+</div>
